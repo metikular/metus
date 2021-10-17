@@ -8,6 +8,7 @@ group :development do
   # Required for the dummy app
   gem 'sqlite3'
   gem 'haml-rails'
+  gem 'devise'
 end
 
 gem 'byebug', group: [:development, :test]
