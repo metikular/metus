@@ -9,4 +9,8 @@
     = stylesheet_pack_tag "application", media: "all"
     = javascript_pack_tag "application"
   %body
+    - if current_admin.present?
+      = render partial: 'navigation'
+    - else
+      = link_to 'Sign in', new_session_path(Admin.new)
     = yield
