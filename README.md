@@ -34,6 +34,14 @@ Public, static pages are served by `Metus::PagesController`. Create the director
 root to: 'metus/pages#home'
 ```
 
+### Production
+
+Precompile assets using:
+
+```bash
+RAILS_ENV=production bin/rails metus:webpacker:compile
+```
+
 ## Contributing
 
 Contributions are welcome. Please open an issue on Github to discuss a contribution or open a pull request if you are feeling lucky.

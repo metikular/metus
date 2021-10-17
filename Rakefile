@@ -16,3 +16,5 @@ Rake::TestTask.new(:test) do |t|
 end
 
 task default: :test
+
+load 'lib/tasks/metus_tasks.rake'
