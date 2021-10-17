@@ -1,0 +1,10 @@
+!!!
+%html
+  %head
+    %title Metus
+    = csrf_meta_tags
+    = csp_meta_tag
+
+    = stylesheet_link_tag "metus/application", media: "all"
+  %body
+    = yield
