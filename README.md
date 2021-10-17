@@ -46,6 +46,16 @@ RAILS_ENV=production bin/rails metus:webpacker:compile
 
 Contributions are welcome. Please open an issue on Github to discuss a contribution or open a pull request if you are feeling lucky.
 
+### Development
+
+Run the included test application:
+
+```bash
+bin/webpack-dev-server &
+cd test/dummy
+bin/rails s
+```
+
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
