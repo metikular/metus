@@ -5,8 +5,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gemspec
 
 group :development do
+  # Required for the dummy app
   gem 'sqlite3'
+  gem 'haml-rails'
 end
 
-# To use a debugger
-# gem 'byebug', group: [:development, :test]
+gem 'byebug', group: [:development, :test]
