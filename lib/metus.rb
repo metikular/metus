@@ -1,6 +1,7 @@
 require "metus/version"
 require "metus/engine"
 require "webpacker"
+require "simple_form"
 
 module Metus
   ROOT_PATH = Pathname.new(File.join(__dir__, '..'))

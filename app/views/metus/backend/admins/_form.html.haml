@@ -1,0 +1,4 @@
+= simple_form_for [:backend, @admin] do |f|
+  = f.input :email, autofocus: true
+  = f.submit
+  = link_to t('forms.cancel'), backend_admins_path, class: 'button secondary'

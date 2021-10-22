@@ -1,0 +1,27 @@
+h1 + form, h2 + form, h3 + form, h4 + form, h5 + form, h6 + form {
+  @apply mt-8;
+}
+
+.input {
+  @apply flex flex-col;
+}
+
+input[type=text], input[type=email] {
+  @apply py-2 px-4 border rounded border-gray-300;
+
+  &:focus, &:active {
+    @apply border-secondary;
+  }
+}
+
+label + input {
+  @apply mt-2;
+}
+
+.input + .input {
+  @apply mt-4;
+}
+
+.input + input[type=submit] {
+  @apply mt-6;
+}

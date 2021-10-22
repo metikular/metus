@@ -1,0 +1,11 @@
+%h1 Users
+
+.my-4.text-right
+  = link_to 'New user', new_backend_admin_path, class: 'button'
+
+- @admins.each do |admin|
+  .box.flex.justify-between
+    = admin.email
+    %div
+      = link_to 'Edit', edit_backend_admin_path(admin), class: 'button secondary small'
+      = link_to 'Delete', backend_admin_path(admin), method: :delete, class: 'button secondary small'

@@ -5,5 +5,6 @@ Metus::Engine.routes.draw do
 
   namespace :backend do
     get :welcome, to: 'welcome#show'
+    resources :admins, except: :show
   end
 end

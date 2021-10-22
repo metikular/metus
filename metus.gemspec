@@ -19,5 +19,6 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "rails", ">= 6.0.0.0"
   spec.add_dependency "haml-rails"
+  spec.add_dependency "simple_form"
   spec.add_dependency "webpacker", ">= 4.0"
 end
