@@ -8,9 +8,12 @@
     = stylesheet_link_tag "metus/application", media: "all"
     = stylesheet_pack_tag "application", media: "all"
     = javascript_pack_tag "application"
-  %body
-    - if current_admin.present?
-      = render partial: 'navigation'
-    - else
-      = link_to 'Sign in', new_session_path(Admin.new)
-    = yield
+  %body.flex
+    .h-full(style="min-width: 10rem")
+      - if current_admin.present?
+        = render partial: 'navigation'
+      - else
+        = link_to 'Sign in', new_session_path(Admin.new)
+
+    .bg-gray-100.flex-grow.p-8(style="flex: 1 0 auto")
+      = yield

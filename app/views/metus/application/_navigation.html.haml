@@ -1,4 +1,5 @@
-%nav.bg-gray-200
+%nav.h-full(style="background-color: #8ea091")
   %ul
-    %li Home
+    %li.active Home
+    %li.title System
     %li= link_to 'Logout', destroy_session_path(current_admin), method: :delete

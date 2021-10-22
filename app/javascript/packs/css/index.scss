@@ -1,3 +1,57 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+html, body {
+  @apply h-full;
+
+  color: #070109;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+h1 {
+  @apply text-4xl;
+  color: #2e3850;
+}
+
+a {
+  color: #446077;
+}
+
+nav li {
+  @apply px-4 py-2 border-l-8;
+  border-color: #8ea091;
+
+  &.active {
+    @apply bg-white;
+    border-color: #2e3850;
+  }
+
+  &:hover:not(.active):not(.title) {
+    background-color: #729aa1;
+    border-color: #729aa1;
+  }
+
+  a {
+    @apply text-white;
+  }
+
+  &.title {
+    @apply font-bold mt-4;
+  }
+}
+
+.box {
+  @apply bg-white p-4;
+}
+
+h1 + .box, h2 + .box, h3 + .box, h4 + .box, h5 + .box, h6 + .box {
+  @apply mt-4;
+}
+
 @import "tailwindcss/utilities";
