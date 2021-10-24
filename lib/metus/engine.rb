@@ -2,6 +2,12 @@ module Metus
   class Engine < ::Rails::Engine
     isolate_namespace Metus
 
+    config.to_prepare do
+      # Make the implementing application's helpers available to the engine.
+      # This is required for the overriding of engine views and helpers to work correctly.
+      Metus::ApplicationController.helper Rails.application.helpers
+    end
+
     initializer "metus.assets.precompile" do |app|
       app.config.assets.precompile += %w( metus/application.css )
     end

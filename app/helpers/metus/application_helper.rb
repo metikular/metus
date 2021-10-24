@@ -7,3 +7,9 @@ module Metus
     end
   end
 end
+
+module ApplicationHelper
+  def external_link_to(title, path, options = {})
+    link_to title, path, options.merge(target: '_blank', rel: 'noopener noreferrer')
+  end
+end
