@@ -16,6 +16,12 @@ And then execute:
 $ bundle
 ```
 
+Add the following to your `config/routes.rb`:
+
+```
+mount Metus::Engine, at: '/metus'
+```
+
 ## Usage
 
 ### Backend Setup
