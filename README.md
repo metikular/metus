@@ -40,6 +40,12 @@ Public, static pages are served by `Metus::PagesController`. Create the director
 root to: 'metus/pages#home'
 ```
 
+Pages are meant to be accessed without authentication. If your `ApplicationController` requires authentication, create a new controller which skips that authentication and tell Metus the name of that controller in `config/initializers/metus.rb`:
+
+```ruby
+Metus.public_controller_class = 'MyPublicController'
+```
+
 ### Production
 
 Precompile assets using:

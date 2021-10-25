@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module Metus
-  class PagesController < PublicController
+  class PagesController < Metus.public_controller_class
     def self.filename_to_pagename(filename)
       directory = File.dirname(filename)
       directory.gsub!(/#{PAGES_DIRECTORY}[\/]?/, '')

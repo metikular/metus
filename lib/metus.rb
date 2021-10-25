@@ -13,4 +13,10 @@ module Metus
       )
     end
   end
+
+  mattr_accessor :public_controller_class
+
+  def self.public_controller_class
+    @@public_controller_class.constantize
+  end
 end
