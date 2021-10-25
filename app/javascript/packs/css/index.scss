@@ -24,25 +24,23 @@ a {
 }
 
 nav li {
-  @apply px-4 py-2 border-l-8;
-  border-color: #8ea091;
-
-  &.active {
-    @apply bg-white;
-    border-color: #2e3850;
-  }
-
-  &:hover:not(.active):not(.title) {
-    background-color: #729aa1;
-    border-color: #729aa1;
-  }
-
   a {
-    @apply text-white;
+    @apply text-white block w-full px-4 py-2 border-l-8;
+    border-color: #8ea091;
+
+    &.active {
+      @apply text-primary bg-white;
+      border-color: #2e3850;
+    }
+
+    &:hover:not(.active):not(.title) {
+      background-color: #729aa1;
+      border-color: #729aa1;
+    }
   }
 
   &.title {
-    @apply font-bold mt-4;
+    @apply font-bold px-4 py-2 mt-4;
   }
 }
 

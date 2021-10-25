@@ -46,6 +46,17 @@ Pages are meant to be accessed without authentication. If your `ApplicationContr
 Metus.public_controller_class = 'MyPublicController'
 ```
 
+### Navigation Links
+
+Use the following for navigation links:
+
+```ruby
+nav_link_to 'My link title', blog_index_path, :exact, class: 'nav link'
+nav_link_to 'My link title', blog_index_path, :controller, class: 'nav link'
+```
+
+When the current path equals the link, an `active` class is added to the link. When using `:exact` as an argument, the full path needs to match. When using `:controller`, only the controller needs to match, so the navigation link is `active` for any action within that controller.
+
 ### Production
 
 Precompile assets using:
