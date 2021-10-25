@@ -2,6 +2,8 @@
 
 Metus is a highly opinionated business application framework, made to create backend applications.
 
+![Backend example](doc/images/users_xs.png)
+
 ## Installation
 
 Add this line to your application's Gemfile:
