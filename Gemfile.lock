@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    metus (0.1.0.pre25)
+    metus (0.1.0.pre29)
       haml-rails
       rails (>= 6.0.0.0)
       webpacker (>= 4.0)
