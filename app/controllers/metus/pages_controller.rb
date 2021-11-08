@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'asciidoctor'
+require 'asciidoctor-bibtex'
 
 module Metus
   class PagesController < Metus.public_controller_class

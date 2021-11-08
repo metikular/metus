@@ -22,4 +22,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "simple_form"
   spec.add_dependency "webpacker", ">= 4.0"
   spec.add_dependency "asciidoctor"
+  spec.add_dependency "asciidoctor-bibtex"
 end

@@ -4,10 +4,14 @@
 Hello! This is a first entry written in Asciidoc.
 
 * First item
-* Second item
+* Second item cite:[testreference2021]
 
 [NOTE]
 .A sidenote
 ====
 Some note text here
 ====
+
+== References
+
+bibliography::[]
