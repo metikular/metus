@@ -1,0 +1,80 @@
+.asciidoc {
+  @apply text-2xl leading-9;
+
+  h1 + #preamble {
+    @apply mt-12;
+  }
+
+  h2 + .sectionbody {
+    @apply mt-8;
+  }
+
+  .admonitionblock {
+    @apply mt-8 lg:mt-12;
+  }
+
+  .paragraph, .sectionbody, .imageblock, .quoteblock {
+    @apply mt-4 lg:mt-6;
+  }
+
+  .ulist {
+    @apply mt-2 lg:mt-4;
+  }
+
+  .admonitionblock.note {
+    @apply my-12;
+
+    .icon {
+      @apply hidden sm:table-cell sm:text-primary sm:border-r-4 sm:border-primary sm:mr-8;
+
+      .title {
+        @apply sm:uppercase sm:pr-4;
+      }
+    }
+
+    .title {
+      @apply font-bold;
+    }
+
+    .content {
+      @apply border-primary border-t-4 border-b-4 py-4 sm:border-t-0 sm:border-b-0 sm:py-0 sm:pl-8;
+
+      &::before {
+        @apply text-primary font-bold sm:hidden;
+
+        content: "NOTE";
+      }
+    }
+  }
+
+  code {
+    @apply bg-gray-100 px-1;
+  }
+
+  .quoteblock {
+    @apply my-12;
+
+    blockquote {
+      @apply inline-block text-2xl font-bold mx-8 lg:mx-16 my-20 px-8 lg:px-16 text-primary italic relative;
+
+      &::before, &::after {
+        content: "“";
+        font-family: 'Zen Antique', serif;
+        font-size: 8rem;
+        position: absolute;
+        opacity: 0.5;
+      }
+
+      &::before {
+        top: 0;
+        left: -3rem;
+      }
+
+      &::after {
+        content: "”";
+        bottom: -2rem;
+        right: -1rem;
+      }
+    }
+  }
+}
