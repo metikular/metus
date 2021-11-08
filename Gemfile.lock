@@ -1,7 +1,8 @@
 PATH
   remote: .
   specs:
-    metus (0.1.0.pre29)
+    metus (0.1.0.pre30)
+      asciidoctor
       haml-rails
       rails (>= 6.0.0.0)
       simple_form
@@ -69,6 +70,7 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
+    asciidoctor (2.0.16)
     bcrypt (3.1.16)
     builder (3.2.4)
     byebug (11.1.3)

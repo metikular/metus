@@ -1,0 +1,13 @@
+= First Entry
+:showtitle:
+
+Hello! This is a first entry written in Asciidoc.
+
+* First item
+* Second item
+
+[NOTE]
+.A sidenote
+====
+Some note text here
+====

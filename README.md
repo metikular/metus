@@ -36,7 +36,7 @@ To redirect to the backend's homepage after login, add the following to your `co
 
 ### Pages
 
-Public, static pages are served by `Metus::PagesController`. Create the directory `app/views/metus/pages` and create HAML templates there. For example, create `app/views/metus/pages/home.html.haml`. Metus generates routes for you. To set your homepage to render `home.html.haml`, use the following route in your `config/routes.rb`:
+Public, static pages are served by `Metus::PagesController`. Create the directory `app/views/pages` and create HAML templates (`.html.haml`) or Asciidoctor files (`.adoc`) there. For example, create `app/views/pages/home.html.haml`. Metus generates routes for you. To set your homepage to render `home.html.haml`, use the following route in your `config/routes.rb`:
 
 ```ruby
 root to: 'metus/pages#home'
@@ -47,6 +47,8 @@ Pages are meant to be accessed without authentication. If your `ApplicationContr
 ```ruby
 Metus.public_controller_class = 'MyPublicController'
 ```
+
+Asciidoctor pages are rendered within a `div` with the class `.asciidoc`, so that specific CSS styling can be applied.
 
 ### Navigation Links
 
