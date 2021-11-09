@@ -13,3 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `external_link_to` helper method for links which should open in a new tab/window
 - `Metus.public_controller_class` to configure the public controller to be used by Metus
 - `nav_link_to` helper to create links which have an `active` class set if the the link equals the current path
+
+### Changed
+
+- Current locale is now added to engine routes
