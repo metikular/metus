@@ -23,4 +23,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "webpacker", ">= 4.0"
   spec.add_dependency "asciidoctor"
   spec.add_dependency "asciidoctor-bibtex"
+  spec.add_dependency "front_matter_parser"
 end

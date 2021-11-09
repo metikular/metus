@@ -2,6 +2,7 @@
 
 require 'asciidoctor'
 require 'asciidoctor-bibtex'
+require 'front_matter_parser'
 
 module Metus
   class PagesController < Metus.public_controller_class

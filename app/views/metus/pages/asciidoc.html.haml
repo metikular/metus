@@ -1,2 +1,5 @@
+= content_for :page_title do
+  = FrontMatterParser::Parser.new(:md).call(File.read(@page[:filename]))['page_title']
+
 .asciidoc
-  = Asciidoctor.convert_file(@page[:filename], to_file: false, standalone: false).html_safe
+  = Asciidoctor.convert_file(@page[:filename], to_file: false, standalone: false, attributes: { 'skip-front-matter' => '' }).html_safe

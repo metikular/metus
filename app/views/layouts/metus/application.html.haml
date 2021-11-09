@@ -1,7 +1,11 @@
 !!!
 %html
   %head
-    %title Metus
+    %title
+      - if content_for? :page_title
+        = content_for :page_title
+      - else
+        Metus
     = csrf_meta_tags
     = csp_meta_tag
 

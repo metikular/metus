@@ -2,7 +2,11 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title Dummy
+    %title
+      - if content_for? :page_title
+        = content_for :page_title
+      - else
+        Dummy
     %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
     = csrf_meta_tags
     = csp_meta_tag
