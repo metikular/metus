@@ -50,9 +50,9 @@ module Metus
     def self.template(name, extension)
       case extension
       when '.html.haml'
-        "pages/#{name}.html.haml"
+        "pages/#{name}"
       when '.adoc'
-        'metus/pages/asciidoc.html.haml'
+        'metus/pages/asciidoc'
       end
     end
 
